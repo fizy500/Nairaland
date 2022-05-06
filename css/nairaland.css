@@ -1,0 +1,305 @@
+* {
+	margin: 0;
+	list-style: none;
+	scroll-behavior: smooth;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("../image/backgound.png");
+	background-position: contain;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: .1rem solid green;
+	color: blueviolet;
+}
+
+#main-div {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 5rem;
+
+
+}
+
+.flex1,
+.flex2,
+.flex4,
+.flex6,
+.flex-footer,
+.login-form,
+.flex-header,
+.password_reset,
+.header1,
+.header1_join,
+.footer-join,
+.footer {
+	min-width: 92%;
+	border: -1rem solid black;
+	border-radius: .5rem;
+	background-color: #efedf1;
+	margin: 0 auto;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+	text-align: center;
+}
+
+.flex-header {
+	margin-top: 3rem;
+}
+
+.flex7 {
+	text-align: center;
+}
+
+.flex8 {
+	text-align: center;
+
+}
+
+.flex3 {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+
+}
+
+.flex3 img {
+	width: 20rem;
+	height: 10rem;
+	border: -1rem solid gray;
+	border-radius: .5rem;
+	margin-right: 2rem;
+	margin-left: 2rem;
+	overflow: hidden;
+}
+
+.flex5 {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.flex5 img {
+	width: 20rem;
+	height: 10rem;
+	border: -1rem solid gray;
+	border-radius: 2rem;
+	margin-right: 2rem;
+	overflow: hidden;
+}
+
+
+.img_1 {
+	border-width: 2px;
+	border-style: double;
+	border-color: black;
+}
+
+.board_head {
+	font-size: 30px;
+	background-color: #F5F5DC;
+
+}
+
+
+.board {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.board ul li {
+	display: inline-block;
+	font-size: 2rem;
+	color: lightblue;
+}
+
+.board ul li :only-of-type {
+	padding-right: 1rem;
+}
+
+
+
+.search-bar {
+	width: 20%;
+	padding: .5rem;
+	cursor: pointer;
+	border-radius: 10px;
+	outline: none;
+	border: .1rem solid black;
+	transition: width 0.4s ease-in-out;
+}
+
+
+
+.search-bar:focus {
+	width: 21%;
+	border: .1rem solid green;
+}
+
+.search-btn {
+	background-color: greenyellow;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: .5rem;
+}
+
+.flex2 h1 {
+	margin: 1rem 1rem;
+}
+
+.logo-box {
+	margin: 2rem 2rem;
+}
+
+.logo {
+	object-fit: contain;
+	width: 40%;
+
+}
+
+.down-text-1 {
+	margin-top: 2rem;
+}
+
+.down-text-2 {
+	margin-top: 2rem;
+}
+
+.header1_join {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+.form-container {
+	margin: 2rem;
+}
+
+.join-submit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 2rem;
+}
+
+@media screen and (max-width:720px) {
+	.flex3 a .ad-2 {
+		display: none;
+	}
+
+	.ad-3 {
+		visibility: hidden;
+	}
+
+	.ad-1 {
+		object-fit: contain;
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+.frontpage-item {
+	padding-bottom: 2rem;
+	font-size: 1.5rem;
+}
+
+.trending-topics p {
+	font-size: 1.3rem;
+}
+
+.join-nairaland-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+	margin-top: 5rem;
+}
+
+.nairaland-login-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 5rem;
+	margin-bottom: 4rem;
+}
+
+.header-span span {
+	padding-bottom: 2rem;
+}
+
+.search-container {
+	margin: 2rem 0;
+}
+
+.nairaland-login-container h1 {
+	text-align: center;
+	margin: 2rem;
+}
+
+.flex4 p:first-of-type {
+	font-size: 2rem;
+	font-weight: 100;
+}
+
+
+
+.username-input,
+.password-input,
+.reset-input {
+	width: 15%;
+	padding: .5rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	border-radius: 10px;
+	outline: none;
+	border: .1rem solid black;
+	transition: width 0.4s ease-in-out;
+}
+
+
+
+.username-input,
+.password-input,
+.reset-input:focus {
+	width: 21%;
+	border: .1rem solid green;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
