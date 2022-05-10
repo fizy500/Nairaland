@@ -1,4 +1,4 @@
-<!doctype.html />
+<!DOCTYPE html />
 <html>
 
 <head>
@@ -27,17 +27,19 @@
 				<span>
 					<a href=""> Trending</a>
 				</span>
+			</p>
 			<p>
 				<a href="">Recent</a>/
 				<a href="">New</a>
 			</p>
 			<br />
 			<p>
-				<b>Stats:</b>2,279,675 members topics.
-
+				<strong>Stats:</strong>2,279,675 members topics.
 			</p>
+			<!-- <p><span> Date:</span> Monday, 24 June 2022 at 1:31 PM</p> -->
+			<div id="clocktime">
 
-			<span> Date:</span> Monday, 24 June 2022 at 1:31 PM</p>
+			</div>
 			<section class="">
 				<input type="search" placeholder="Search" class="search-bar" />
 				<button class="search-btn">Search</button>
@@ -47,13 +49,15 @@
 		<div class="login-form">
 			<p>Login With Password</p>
 			<hr>
-			<section class="form-container">
-				<label for="username">User Name</label>
-				<input type="text" name="username" required class="username-input" />
-				<label for="password">Password</label>
-				<input type="password" name="password" required class="password-input" />
-				<br>
-				<button class="search-btn">Login</button>
+			<section class="">
+				<form method="get" action="" class="form-container">
+					<label for="username">User Name</label>
+					<input type="text" name="username" required class="username-input" autocomplete="username"/>
+					<label for="password">Password</label>
+					<input type="password" name="password" required class="password-input" autocomplete="current-password" />
+					<br>
+					<button class="search-btn" autocomplete="on">Login</button>
+				</form>
 			</section>
 		</div>
 		<br>
@@ -66,16 +70,13 @@
 			<div class="reset-container">
 				<label for="email">E-mail</label>
 				<input type="text" name="email" class="reset-input" />
-				<button class="search-btn">Reset<button>
+				<button class="search-btn"> Reset <button>
 			</div>
 		</div>
-		<br>
 
 		<div class="footer">
-			<form action="" method="GET">
-				<input type="search" placeholder="search" class="search-bar" />
-				<button class="search-btn">Search</button>
-			</form>
+			<input type="search" placeholder="search" class="search-bar" />
+			<button class="search-btn">Search</button>
 			<p>
 				Sections:
 				<a href="">politics</a>..(
@@ -128,17 +129,17 @@
 				<a href="">How To Advertise.</a>
 			</p>
 			<p>
-				<b>Disclaimer</b>:Every Nairaland member is
-				<b>solely responsible</b> for
-				<br>
-				<b>anything</b> he or she
-				<b>posts</b> or
-				<b>uploads</b> on Nairaland.
-			</P>
+				<strong>Disclaimer</strong>:Every Nairaland memstronger is
+				<strong>solely responsistrongle</strong> for
+				<strong>anything</strong> he or she
+				<strong>posts</strong> or
+				<strong>uploads</strong> on Nairaland.
+			</p>
 
 		</div>
 
 	</section>
+	<script src="nairaland.js"></script>
 </body>
 
 </html>

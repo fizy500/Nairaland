@@ -31,17 +31,6 @@ a:hover {
 	color: blueviolet;
 }
 
-#main-div {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	flex-direction: column;
-	padding-bottom: 5rem;
-
-
-}
-
 .flex1,
 .flex2,
 .flex4,
@@ -58,10 +47,19 @@ a:hover {
 	border: -1rem solid black;
 	border-radius: .5rem;
 	background-color: #efedf1;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	padding-bottom: 2rem;
 	padding-top: 2rem;
 	text-align: center;
+}
+
+#main-div {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 5rem;
 }
 
 .flex-header {
@@ -74,7 +72,10 @@ a:hover {
 
 .flex8 {
 	text-align: center;
+}
 
+.header-large {
+	box-shadow: 0px 24px 3px -24px rgb(0, 0, 0, 0.9);
 }
 
 .flex3 {
@@ -82,7 +83,6 @@ a:hover {
 	justify-content: center;
 	align-content: center;
 	align-items: center;
-
 }
 
 .flex3 img {
@@ -105,11 +105,11 @@ a:hover {
 	width: 20rem;
 	height: 10rem;
 	border: -1rem solid gray;
-	border-radius: 2rem;
+	border-radius: .5rem;
 	margin-right: 2rem;
+	margin-left: 2rem;
 	overflow: hidden;
 }
-
 
 .img_1 {
 	border-width: 2px;
@@ -120,14 +120,10 @@ a:hover {
 .board_head {
 	font-size: 30px;
 	background-color: #F5F5DC;
-
 }
-
-
 .board {
 	display: flex;
 	justify-content: space-around;
-
 }
 
 .board ul li {
@@ -139,11 +135,8 @@ a:hover {
 .board ul li :only-of-type {
 	padding-right: 1rem;
 }
-
-
-
 .search-bar {
-	width: 20%;
+	width: 40%;
 	padding: .5rem;
 	cursor: pointer;
 	border-radius: 10px;
@@ -151,11 +144,8 @@ a:hover {
 	border: .1rem solid black;
 	transition: width 0.4s ease-in-out;
 }
-
-
-
 .search-bar:focus {
-	width: 21%;
+	width: 41%;
 	border: .1rem solid green;
 }
 
@@ -181,53 +171,45 @@ a:hover {
 .logo {
 	object-fit: contain;
 	width: 40%;
-
 }
 
 .down-text-1 {
 	margin-top: 2rem;
 }
-
 .down-text-2 {
 	margin-top: 2rem;
 }
-
 .header1_join {
 	display: flex;
 	justify-content: center;
 	align-content: center;
 	flex-direction: column;
 }
-
 .form-container {
 	margin: 2rem;
 }
-
 .join-submit {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	margin: 2rem;
+	text-align: center;
+}
+.join-submit section {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 @media screen and (max-width:720px) {
-	.flex3 a .ad-2 {
-		display: none;
-	}
 
-	.ad-3 {
-		visibility: hidden;
-	}
-
-	.ad-1 {
+	/* .ad-1 {
 		object-fit: contain;
 		width: 100%;
 		height: auto;
-	}
+	} */
 }
-
-
 .frontpage-item {
 	padding-bottom: 2rem;
 	font-size: 1.5rem;
@@ -244,6 +226,7 @@ a:hover {
 	align-content: center;
 	flex-direction: column;
 	margin-top: 5rem;
+	text-align: center;
 }
 
 .nairaland-login-container {
@@ -273,28 +256,24 @@ a:hover {
 	font-weight: 100;
 }
 
-
-
 .username-input,
 .password-input,
-.reset-input {
-	width: 15%;
+.reset-input,
+.join-input {
+	width: 25%;
 	padding: .5rem;
 	margin-bottom: 1rem;
 	cursor: pointer;
 	border-radius: 10px;
 	outline: none;
 	border: .1rem solid black;
-	transition: width 0.4s ease-in-out;
+	border: .1rem solid green;
 }
-
-
 
 .username-input,
 .password-input,
 .reset-input:focus {
 	width: 21%;
-	border: .1rem solid green;
 }
 
 .form-container {
@@ -302,4 +281,8 @@ a:hover {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+#clocktime{
+	font-size:1rem;
+	color:darkgrey;
 }
